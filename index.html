@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landerz</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Glide -->
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <!-- Glide Optional Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <!-- Glide-js -->
+    <script src="node_modules/@glidejs/glide/dist/glide.js"></script>
+    <!-- Glide -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/flaticon/font/flaticon.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/icomoon/style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="w-100 border-bottom bg-white shadow-sm" id="header">
+        <div class="app-cont">
+          <div class="row app-header-row no-gutters">
+            <ul class="app-nav navbar-nav d-flex align-items-lg-center m-auto">
+              <li class="nav-item">
+                <a
+                  href="index.html#home"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html#features"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html#about"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html#testimonials"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html#blog"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html#contact"
+                  class="app-nav-link nav-link d-flex align-items-center"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <article class="w-100 bg-white">
+        <div class="app-cont">
+          <div id="home" class="row app-main-row no-gutters pb-2 pb-md-5">
+            <div class="app-logo d-flex align-items-lg-center m-auto">
+              <a
+                href="index.html#home"
+                class="nav-link app-tc-dark d-flex align-items-center"
+              >
+                <b>Landerz</b>
+              </a>
+            </div>
+            <div class="app-menu d-flex align-items-center">
+              <span
+                class="app-icon nav-link icon-menu openclose"
+                onclick="openClose()"
+              ></span>
+              <span
+                class="app-icon nav-link icon-close openclose d-none"
+                onclick="openClose()"
+              ></span>
+              <div class="app-menu-nav fade-transition fade d-none shadow">
+                <ul class="navbar-nav d-flex flex-column ml-auto">
+                  <li class="nav-item" onclick="openClose()">
+                    <a href="index.html#home" class="nav-link px-3">Home</a>
+                  </li>
+                  <li class="nav-item px-3" onclick="openClose()">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                  </li>
+                  <li class="nav-item px-3" onclick="openClose()">
+                    <a href="index.html#about" class="nav-link">About us</a>
+                  </li>
+                  <li class="nav-item px-3" onclick="openClose()">
+                    <a href="index.html#testimonials" class="nav-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item px-3" onclick="openClose()">
+                    <a href="index.html#blog" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item px-3" onclick="openClose()">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-column-reverse flex-md-row align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="align-items-end pb-5 pt-3 py-md-0 pr-0 pr-md-5">
+                <h1 class="d-none d-md-inline">
+                  Grow your <br />
+                  Business <br />
+                  Faster
+                </h1>
+                <h1 class="d-inline d-md-none font-weight-bold">
+                  Grow your Business Faster
+                </h1>
+                <h2 class="h5 mb-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Provident officia beatae consectetur. Quam voluptatum cumque
+                  recusandae! Recusandae quisquam praesentium magni veritatis
+                  repellat minus vitae aut reiciendis ipsa, ex iusto sint?
+                </h2>
+                <a
+                  href="index.html#features"
+                  class="btn rounded-pill app-btn-primary"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="scale-img mx-md-5 my-md-5">
+                <img
+                  src="assets/img/landing_1.png"
+                  alt="landing.jpg"
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="features" class="features w-100 app-bg-gray mt-2 mt-md-5">
+        <div class="app-cont">
+          <h2 class="text-center font-weight-bold mb-0 py-5">Features</h2>
+          <div class="row features-content">
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-refresh"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">
+                    Business Consulting
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-store_mall_directory"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">Market Analysis</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-shopping_basket"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">User Monitoring</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-history"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">
+                    Insurance Consulting
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-tag_faces"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">
+                    Customer Satisfied
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 p-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="feature-icon mb-3">
+                    <span class="app-icon icon-plug"></span>
+                  </div>
+
+                  <h5 class="card-title font-weight-bold">Plug & Play</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quam, vitae suscipit? Libero quibusdam recusandae.
+                  </p>
+                  <a
+                    href="index.html#features"
+                    class="card-link btn pl-0 app-tc-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white mt-2 mt-md-5">
+        <div class="app-cont">
+          <div class="row prototype-content">
+            <div
+              class="
+                d-block
+                col-md-5 col-lg-7
+                px-1 px-lg-5
+                d-md-flex
+                align-items-center
+              "
+            >
+              <img src="assets/img/prototypes.png" alt="prototypes.png" />
+            </div>
+            <div class="col-12 col-md-7 col-lg-5 px-1 px-lg-5 mt-n5">
+              <h2 class="font-weight-bold mb-0 py-2">
+                Create interactive prototypes
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus ipsum nemo fugiat eos amet! Corrupti, debitis sed?
+              </p>
+              <div>
+                <span class="app-icon icon-done text-success d-inline"></span>
+                <p class="d-inline m-0 mt-1 ml-3">Lorem ipsum, dolor sit</p>
+              </div>
+              <div>
+                <span class="app-icon icon-done text-success d-inline"></span>
+                <p class="d-inline m-0 mt-1 ml-3">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="card mt-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="col-2 px-0 rounded-circle overflow-hidden">
+                      <img src="assets/img/person_1.jpg" alt="person1.jpg" />
+                    </div>
+                    <div class="col-10">
+                      <h5 class="card-title">Amalia G.</h5>
+                      <h6 class="card-subtitle mb-0 text-muted">
+                        Co-Funder, XYZ Inc.
+                      </h6>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatum eaque id maiores?.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="about" class="app-bg-gray mt-2 mt-md-5">
+        <div class="app-cont">
+          <h2 class="text-center font-weight-bold mb-0 py-5">About Us</h2>
+          <div class="row no-gutters about-content">
+            <div
+              class="
+                d-block
+                col-md-5 col-lg-7
+                px-1 px-lg-5
+                d-md-flex
+                align-items-center
+              "
+            >
+              <img src="assets/img/about_1.jpg" alt="about_1.jpg" />
+            </div>
+            <div class="col-12 col-md-7 col-lg-5 px-1 px-lg-5">
+              <h2 class="font-weight-bold mb-0 py-2">
+                Create interactive prototypes
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus ipsum nemo fugiat eos amet! Corrupti, debitis sed?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus ipsum nemo fugiat eos amet!
+              </p>
+              <a
+                href="index.html#features"
+                class="btn rounded-pill app-btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="testimonials" class="bg-white mt-2 mt-md-5">
+        <div class="app-cont">
+          <h2 class="text-center font-weight-bold mb-0 pb-5">Testimonials</h2>
+
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul id="glide-user-list" class="glide__slides mb-0"></ul>
+              <div
+                id="car-controls"
+                class="row p-2 p-lg-4 justify-content-center p-2 m-0"
+              ></div>
+            </div>
+            <div
+              class="glide__arrows row app-cont justify-content-between"
+              data-glide-el="controls"
+            >
+              <a class="btn side-control" data-glide-dir="<">
+                <span class="app-icon icon-keyboard_arrow_left"></span>
+              </a>
+              <a class="btn side-control" data-glide-dir=">">
+                <span class="app-icon icon-keyboard_arrow_right"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="contact" class="app-bg-gray mt-0">
+        <div class="app-cont">
+          <h2 class="text-center font-weight-bold mb-0 py-5">About Us</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-7 mx-auto p-4 bg-white">
+            <h4 class="font-weight-bolder">Contact Form</h4>
+            <form
+              action="/post.html"
+              class="row needs-validation"
+              method="get"
+              novalidate
+            >
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  required
+                />
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLastName"
+                  required
+                />
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="col-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  required
+                />
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="col-12">
+                <label for="inputSubject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  required
+                />
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="col-12">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  rows="5"
+                  placeholder="Write your notes or questions here..."
+                ></textarea>
+              </div>
+
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn app-btn-primary rounded-pill">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="app-bg-white mt-5 pt-5 pb-4">
+      <p class="text-center">Copyright &copy; 2019 All rights reserved</p>
+    </footer>
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener("load", () => {
+          load();
+        });
+      })();
+
+      function load() {
+        let form = document.querySelector(".needs-validation");
+        form.addEventListener("submit", (event) => {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        });
+      }
+
+      const isMenuOpen = (function () {
+        let i = false;
+        return () => {
+          i = !i;
+          return i;
+        };
+      })();
+
+      function openClose(event) {
+        document.querySelectorAll(".openclose").forEach((item) => {
+          item.classList.toggle("d-none");
+        });
+
+        let menu = document.querySelector(".fade-transition");
+
+        let a = isMenuOpen();
+
+        if (a) {
+          menu.classList.toggle("d-none");
+          setTimeout(() => {
+            menu.classList.toggle("fade");
+          }, 50);
+        } else {
+          menu.classList.toggle("fade");
+          setTimeout(() => {
+            menu.classList.toggle("d-none");
+          }, 500);
+        }
+      }
+    </script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/icomoon/style.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <main class="row vh-100 w-100 justify-content-center align-items-center">
+      <div class="col-4 p-5 shadow-lg bg-white text-center">
+        <span class="success-page-icon mx-auto text-success icon-check"></span>
+
+        <h1 class="m-0 font-weight-bolder">Success</h1>
+      </div>
+    </main>
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            window.location.replace("/index.html");
+          }, 5000);
+        });
+      })();
+    </script>
+  </body>
+</html>
